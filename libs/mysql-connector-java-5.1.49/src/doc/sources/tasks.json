@@ -1,0 +1,30 @@
+{  
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "JC",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk1.8.0_161\\bin\\javac.exe" 
+                /*JDK'nın dosya yolu bu kısım bilgisayarınızda kurulu olduğu 
+                yere göre farklılık gösterebilir.*/
+            },
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "taskName": "JR",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk1.8.0_161\\bin\\java.exe" 
+                /*JDK'nın dosya yolu bu kısım bilgisayarınızda kurulu olduğu 
+                yere göre farklılık gösterebilir.*/
+            },
+            "args": [
+                "${fileBasenameNoExtension}"
+            ]
+        }
+    ]
+}
